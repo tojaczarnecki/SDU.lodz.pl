@@ -1,0 +1,7 @@
+{
+  "name": "sdu-lodz-prototype",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 43124"
+  }
+}

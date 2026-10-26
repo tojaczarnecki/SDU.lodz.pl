@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Informacje o dostępności serwisu Światowego Dnia Ubogich w Łodzi." />
+    <title>Dostępność serwisu — ŚDU Łódź</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html#top" aria-label="Światowy Dzień Ubogich w Łodzi — strona główna"><img class="wordmark-logo" src="assets/logo-sdu.svg" alt="Światowy Dzień Ubogich w Łodzi" /></a>
+      <div class="header-actions">
+        <div class="accessibility-controls" aria-label="Sterowanie dostępnością">
+          <button class="accessibility-button" type="button" data-a11y="smaller" aria-label="Zmniejsz rozmiar tekstu" title="Zmniejsz rozmiar tekstu">A−</button>
+          <button class="accessibility-button" type="button" data-a11y="larger" aria-label="Zwiększ rozmiar tekstu" title="Zwiększ rozmiar tekstu">A+</button>
+          <button class="accessibility-button accessibility-contrast" type="button" data-a11y="contrast" aria-label="Włącz wysoki kontrast" aria-pressed="false" title="Włącz wysoki kontrast"><span aria-hidden="true"></span></button>
+          <button class="accessibility-button" type="button" data-a11y="links" aria-label="Podkreśl i podświetl linki" aria-pressed="false" title="Podkreśl i podświetl linki">L</button>
+          <button class="accessibility-button" type="button" data-a11y="mono" aria-label="Włącz tryb monochromatyczny" aria-pressed="false" title="Włącz tryb monochromatyczny">◐</button>
+        </div>
+        <a class="program-link" href="index.html#program">Program</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel"><span class="menu-icon" aria-hidden="true"><i></i><i></i></span><span>Menu</span></button>
+      </div>
+    </header>
+    <div class="menu-backdrop" hidden></div>
+    <aside class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Nawigacja główna" hidden>
+      <div class="menu-topline"><span>Nawigacja</span><button class="menu-close" type="button" aria-label="Zamknij menu">Zamknij <span aria-hidden="true">×</span></button></div>
+      <div class="menu-content"><nav class="menu-nav" aria-label="Główne sekcje">
+        <a href="index.html#top">Start <span>01</span></a><a href="index.html#glowne-obchody">Główne obchody <span>02</span></a><a href="index.html#program">Program <span>03</span></a><a href="https://dzienubogich.lodz.pl/przewodnik-gdzie/">Znajdź pomoc <span>04</span></a><a href="index.html#kontakt">Kontakt <span>05</span></a><a href="index.html#o-sdu">O ŚDU <span>06</span></a>
+        <details><summary>Informacje <span class="plus" aria-hidden="true">+</span></summary><div class="submenu"><a href="accessibility.html">Dostępność serwisu</a><a href="privacy.html">Polityka prywatności</a></div></details>
+      </nav><div class="menu-edition" aria-label="Informacja o edycji"><div class="edition-mark">26</div><p>Światowy Dzień Ubogich<br />w Łodzi</p><span class="rule"></span><p class="muted">Tegoroczna identyfikacja<br />w przygotowaniu</p></div></div>
+    </aside>
+    <main id="main" class="content-page" tabindex="-1">
+      <div class="content-page-intro"><p class="eyebrow">Informacje / 01</p><h1>Dostępność<br /><em>serwisu.</em></h1><p class="content-lead">Strona oferuje funkcje ułatwiające korzystanie z serwisu i jest rozwijana z uwzględnieniem standardów dostępności cyfrowej.</p></div>
+      <div class="content-page-body">
+        <section aria-labelledby="scope-title"><h2 id="scope-title">Zakres dostępności</h2><p>Strona oferuje następujące funkcje ułatwiające korzystanie:</p><ul class="feature-list"><li><span class="feature-index" aria-hidden="true">01</span><span><strong>Wysoki kontrast</strong><small>Wyraźniejsze zestawienie tekstu i tła.</small></span></li><li><span class="feature-index" aria-hidden="true">02</span><span><strong>Rozmiar tekstu</strong><small>Powiększanie i zmniejszanie tekstu przyciskami A− i A+.</small></span></li><li><span class="feature-index" aria-hidden="true">03</span><span><strong>Widoczne linki</strong><small>Podkreślanie i podświetlanie odnośników.</small></span></li><li><span class="feature-index" aria-hidden="true">04</span><span><strong>Tryb monochromatyczny</strong><small>Ograniczenie kolorów do skali szarości.</small></span></li><li><span class="feature-index" aria-hidden="true">05</span><span><strong>Menu dostępności</strong><small>Sterowanie funkcjami za pomocą ikon w headerze.</small></span></li></ul></section>
+        <section aria-labelledby="level-title"><h2 id="level-title">Poziom zgodności</h2><p>Strona stara się spełniać standardy <strong>WCAG 2.1 na poziomie AA</strong>.</p></section>
+        <section aria-labelledby="exceptions-title"><h2 id="exceptions-title">Wyjątki i ograniczenia</h2><p>Niektóre treści mogą nie być w pełni dostępne, w tym:</p><ul><li>Materiały multimedialne, które mogą nie mieć napisów lub alternatywnych opisów</li><li>Funkcje zależne od ustawień przeglądarki lub urządzenia</li></ul></section>
+        <section aria-labelledby="dates-title"><h2 id="dates-title">Daty</h2><p><strong>Data publikacji:</strong> 04.10.2025 r.</p><p><strong>Data ostatniej aktualizacji:</strong> 04.10.2025 r.</p></section>
+      </div>
+    </main>
+    <div class="sr-only" id="a11y-status" role="status" aria-live="polite" aria-atomic="true"></div>
+    <footer class="site-footer section-pad" id="stopka"><div class="footer-top"><span>ŚDU / ŁÓDŹ</span><span>EDYCJA 2026</span></div><div class="footer-grid"><div><span class="footer-label">Kontakt</span><p>Dane kontaktowe 2026 do uzupełnienia</p></div><div><span class="footer-label">Ważne</span><a href="index.html#o-sdu">O ŚDU</a><a href="index.html#program">Program</a><a href="accessibility.html">Dostępność serwisu</a><a href="privacy.html">Polityka prywatności</a></div><div><span class="footer-label">Projekt</span><p>Prototyp strony głównej<br />materiały 2026 do uzupełnienia</p></div></div><div class="footer-bottom"><span>© 2026 Światowy Dzień Ubogich w Łodzi</span><span>Strona w przygotowaniu</span></div></footer>
+  </body>
+</html>
